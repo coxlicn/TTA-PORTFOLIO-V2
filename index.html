@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyomugisha Ishimwe Collin| Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .navigation-bar ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .navigation-bar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        .navigation-bar ul li a:hover {
+            background-color: white;
+            color: #3498db;
+        }
+
+        /* Home Section */
+        #home-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 5%;
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            /* Removed clip-path for straight section */
+            color: white;
+        }
+
+        .text-content {
+            width: 50%;
+        }
+
+        .text-content h1 {
+            font-size: 45px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            /* Removed text-shadow */
+        }
+
+        .text-content p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #ecf0f1;
+        }
+
+        .image-container {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .image-container img {
+            width: 85%;
+            height: auto;
+            border-radius: 15px;
+            border: 3px solid #fff;
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Skills Section */
+        #skills-section {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            padding: 60px 5%;
+            text-align: center;
+            color: white;
+        }
+
+        .skill-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .skill-card {
+            width: 260px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            color: #333;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Portfolio Section */
+        #portfolio-section {
+            background: linear-gradient(135deg, #2ecc71, #27ae60);
+            padding: 60px 5%;
+            text-align: center;
+        }
+
+        .portfolio-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .portfolio-card {
+            width: 270px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .portfolio-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Testimonials Section */
+        #testimonials-section {
+            background: linear-gradient(135deg, #f39c12, #f2c94c);
+            padding: 60px 5%;
+            text-align: center;
+            color: white;
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            font-weight: 600;
+        }
+
+        .testimonial-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .testimonial-card {
+            width: 270px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            color: #333;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .testimonial-card p {
+            font-size: 16px;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .testimonial-card h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navigation-bar">
+            <ul>
+                <li><a href="#home-section">Home</a></li>
+                <li><a href="#skills-section">Skills</a></li>
+                <li><a href="#portfolio-section">Projects</a></li>
+                <li><a href="#testimonials-section">Testimonials</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home-section">
+        <div class="text-content">
+            <h1>Cyomugisha Ishimwe Collin</h1>
+            <p>As an incomparable student at AIA and TTA with a focus on coding and tech world, I specialize in creating perfect and innovative designs using HTML & CSS.</p>
+        </div>
+        <div class="image-container">
+            <img src="colo.jpg"alt="Profile Picture">
+        </div>
+    </section>
+
+    <section id="skills-section">
+        <h1>Skills</h1>
+        <div class="skill-container">
+            <div class="skill-card"><h2>Web Design</h2><p>Building responsive websites with HTML & CSS</p></div>
+            <div class="skill-card"><h2>UI/UX</h2><p> Designing user-centered interfaces and experiences</p></div>
+                <div class="skill-card"><h3>Animations</h3><p>Creating engaging animations and transitions with CSS</p></div>
+        </div>
+    </section>
+
+    <section id="portfolio-section">
+        <h1>Projects</h1>
+        <div class="portfolio-container">
+            <div class="portfolio-card">
+                <img src="ol.png" alt="Project 1">
+                <h2>Portfolio Website</h2>
+                <p>A personal website showcasing my skills and projects.</p>
+            </div>
+            <div class="portfolio-card">
+                <img src="3 project.png" alt="Project 2">
+                <h2>Landing Page</h2>
+                <p>A dynamic landing page designed for a startup.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials-section">
+        <h2>What People Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-card">
+                <h3>John Doe</h3>
+                <img src="joe.jpg" alt="John" width="250" height="200">
+                <p> "Stunning website! Collin's a design genius. Traffic's booming!"</p>
+    
+            </div>
+            <div class="testimonial-card">
+                <h3>Jane Smith</h3>
+                <img src="jane.webp" alt="Jane" width="200" height="200">
+                <p>Unmatched coding. Site's fast, reliable. Collin's the best!"</p>
+                
+            </div>
+            <div class="testimonial-card">
+                <h3>Emily Johnson</h3>
+                <img src="emily.webp" alt="Johnson" width="250" height="200">
+                <p>"My new website is absolutely gorgeous! Collin's design vision is incredible, and the user experience is seamless. I'm already seeing a huge increase in engagement.  He's a true artist!"</p>
+            </div>
+        </div>
+    </section>
+    </body>
+</html>
